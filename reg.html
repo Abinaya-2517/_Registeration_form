@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title class="heading">Registration Form</title>
+    <link  rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" >
+            <div class="form-group">
+                <label for="fullName"><b>Full Name</b>:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="enter your fullname" required>
+            </div>
+            
+            
+            
+            <div class="form-group">
+                <label for="email"><b>Email</b>:</label>
+                <input type="email" id="email" name="email" placeholder="enter your e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="password"><b>Password</b>:</label>
+                <input type="password" id="password" name="password"placeholder="enter strong password" required>
+            </div>
+            <div class="form-group">
+            <label for="confirm_password"><b>Confirm Password</b>:</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="enter your confirm password">
+        </div>
+        <br>
+            <div class="form-group">
+            <label for="dob"><b>Date of Birth</b>:</label>
+        <input type="date" id="dob" name="dob" required>
+    </div>
+        <br>
+        
+        <div class="checkgen">
+
+        <label ><b>Gender</b>:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+      
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        
+        
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+        
+        </div>
+        <br>
+        <br>
+         
+        <div class="selectcon">
+        <label for="country"><b>Country</b>:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="IN">India</option>
+            <option value="USA">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="CA">Canada</option>
+            <option value="">Others</option>
+        </select>
+    </div>
+        <br>
+        <br>
+        <div class="checkskill">
+            <label for="Skills"><b>Skills</b>:</label>
+            <input type="checkbox" id="java" name="skills" value="java" >
+            <label for="java">Java</label>
+            <input type="checkbox" id="C" name="skills" value="C" >
+            <label for="C">C</label>
+            <input type="checkbox" id="python" name="skills" value="python">
+            <label for="python">Python</label>
+             <input type="checkbox" id="Others" name="skills" value="Others" >
+            <label for="Others">Others</label>
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="submit-btn"> enroll student</button>
+        <input type="button" value="Clear" onclick="clearForm()" class="clr-btn" >
+        </form>
+        <div class="submitted-data" id="submittedData"></div>
+    </div>
+
+    <script src="reg.js"></script>
+</body>
+</html>
